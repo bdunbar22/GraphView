@@ -1,0 +1,24 @@
+{
+  "name": "graph-view",
+  "version": "1.0.0",
+  "description": "A repository to view some simple data in a graphical form.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bdunbar22/GraphView.git"
+  },
+  "author": "bdunbar22",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bdunbar22/GraphView/issues"
+  },
+  "homepage": "https://github.com/bdunbar22/GraphView#readme",
+  "dependencies": {
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "react-graph-vis": "^1.0.2"
+  }
+}
