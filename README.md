@@ -1,6 +1,6 @@
 # GraphView #
 
-Playing with react graph visualization.
+Playing with react graph visualization for character graphs
 
 ## Prerequisites ##
 
@@ -18,7 +18,7 @@ Build:
 ```bash
 npm install
 mkdir -p target
-npm run-script build
+npm start
 ```
 
 Target:

@@ -1,23 +1,20 @@
 const webpack = require("webpack")
-const { resolve }  = require("path")
+const { resolve } = require("path")
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: {
-    index: resolve(__dirname,'./src/index.js'),
+    index: resolve(__dirname, './src/index.js'),
     vendor: ['react', 'react-dom']
   },
-
   output: {
     filename: "[name].[hash].js",
     path: resolve(__dirname, "./target"),
     publicPath: ""
   },
-
   node: {
     fs: "empty"
   },
-
   module: {
     loaders: [
       {
@@ -30,7 +27,6 @@ module.exports = {
       },
     ],
   },
-
   plugins: [
     new webpack.optimize.UglifyJsPlugin({
       compress: {
@@ -44,12 +40,10 @@ module.exports = {
       },
       sourceMap: false,
     }),
-
     new HtmlWebpackPlugin({
-        template: resolve(__dirname, './src/index.html'),
-        filename: 'index.html',
-        inject: 'body',
-      }),
-
+      template: resolve(__dirname, './src/index.html'),
+      filename: 'index.html',
+      inject: 'body',
+    }),
   ]
 }
